@@ -1,0 +1,242 @@
+
+.container {
+    width: 100%;
+    margin: 0 auto ;
+}
+@media (min-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .login-methods::after {
+        content: '';
+        width: 35px;
+        height: 2px;
+        background: black;
+        top: 50%;
+        left: 105%;
+        position: absolute;
+    }
+    
+    .login-methods::before {
+        content: '';
+        width: 35px;
+        height: 2px;
+        background: black;
+        top: 50%;
+        right: 105%;
+        position: absolute;
+    }
+}
+@media (min-width: 425px) {
+    .container {
+        max-width: 325px;
+    }
+
+    .login-methods::after {
+        content: '';
+        width: 35px;
+        height: 2px;
+        background: black;
+        top: 50%;
+        left: 105%;
+        position: absolute;
+    }
+    
+    .login-methods::before {
+        content: '';
+        width: 35px;
+        height: 2px;
+        background: black;
+        top: 50%;
+        right: 105%;
+        position: absolute;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(200, 188, 188) 1px;
+    width: 100%;
+    max-width: 550px;
+    padding: 3rem;
+    border-radius:20px;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.form-field {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.form-field input {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+    padding-right:calc(15px + 1rem) ;
+    border: solid rgb(164, 163, 163) 1px;
+    
+}
+.form-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.5rem;
+    width: 15px;
+    color: #a3a3a3;
+
+}
+.btn {
+    padding: 0.5rem;
+    /* max-width: 250px; */
+    width: 250px;
+    background-color: #d2691e;
+    border-radius: 0.5rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+.Check-field {
+    font-size: 12px;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.main-h1 {
+    align-self: flex-start;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(200, 188, 188) 1px;
+    width: 100%;
+    max-width: 550px;
+    padding: 3rem;
+    border-radius:20px;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+.loginMeth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.icons-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 30px;
+    cursor: pointer;
+}
+.fa-facebook {
+    color: rgb(23, 23, 122);
+    /* border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center; */
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-methods {
+    position: relative;
+    font-size: 14px;
+}
+
+.login-methods::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 105%;
+    position: absolute;
+}
+
+.login-methods::before {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: black;
+    top: 50%;
+    right: 105%;
+    position: absolute;
+}
+
+.side-p {
+    letter-spacing: 0.2rem;
+}
+
+.forget-password {
+    align-self: flex-end;
+    font-size: 13px;
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-tag {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.link-tag:hover {
+    text-decoration: underline;
+}

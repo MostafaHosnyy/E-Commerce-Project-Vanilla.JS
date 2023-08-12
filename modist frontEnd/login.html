@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>    
+    <section id="header">
+    <ul class="brandName">
+       <li>MODIST</li>
+     </ul>
+    <div>
+      <ul id="navbar">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+     </ul>
+  </section>
+    <div class="container">
+        <main>
+            <form action="" class="login-form">
+                <p class="side-p main-h1">LE-MODIST</p>
+                <h1 class="main-h1">Login</h1>
+
+                <div class="form-field">
+                    <input id="email" type="email" placeholder="E-mail" required maxlength="18">
+                    <i class="fa-solid fa-signature"></i>
+                </div>
+
+                <div class="form-field">
+                    <input id="password" type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="forget-password">
+                    <p>Forget Password?</p>
+                </div>
+
+                <div class="forget-password">
+                    <a class="link-tag" href="http://127.0.0.1:5501/register.html">You don't have an account sign up now!</a>
+                </div>
+                
+                <div>
+                 <button type="button"
+                  class="btn"
+                    onclick="loginUser()">
+                    Login
+                </button>
+                </div>
+
+                <div class="loginMeth">
+                    <p class="login-methods">Another Login Methods</p>
+                <div class="icons-login">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                </div>
+
+                <div class="Check-field">
+                    <input type="checkbox"> Keep me Signed in
+                </div>
+
+            </form>
+        </main>
+
+    </div>
+    <script src="js/login.js">
+        
+    </script>
+</body>
+</html>
